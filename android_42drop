@@ -1,7 +1,7 @@
 #!/bin/bash
 
-MTARGET=/BUILD/TO_PUSH/android_device_htc_endeavoru/prebuilt/modules
-MTARGET_LIVE=/BUILD/X42/device/htc/endeavoru/prebuilt/modules
+MTARGET=~/android/modules
+MTARGET_LIVE=~/android/modules_live
 
 
 for x in `find . | grep \.ko$` ; do
