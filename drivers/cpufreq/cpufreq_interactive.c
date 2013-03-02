@@ -65,11 +65,11 @@ static spinlock_t down_cpumask_lock;
 static struct mutex set_speed_lock;
 
 /* Go to max speed when CPU load at or above this value. */
-#define DEFAULT_GO_MAXSPEED_LOAD 95
+#define DEFAULT_GO_MAXSPEED_LOAD 90
 static unsigned long go_maxspeed_load;
 
 /* Base of exponential raise to max speed; if 0 - jump to maximum */
-#define DEFAULT_BOOST_FACTOR 5
+#define DEFAULT_BOOST_FACTOR 0
 static unsigned long boost_factor;
 
 /* Max frequency boost in Hz; if 0 - no max is enforced */
@@ -84,7 +84,7 @@ static unsigned long io_is_busy;
  * Targeted sustainable load relatively to current frequency.
  * If 0, target is set realtively to the max speed
  */
-#define DEFAULT_SUSTAIN_LOAD 97
+#define DEFAULT_SUSTAIN_LOAD 80
 static unsigned long sustain_load;
 
 /*
